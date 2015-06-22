@@ -23,10 +23,13 @@ $navbar-inverse-background-color:            $black !default;
 
   .navbar-default {
       & {
-          background-color: $navbar-background-color;
-          border-color: $navbar-background-color;
+          background-color: $white;
+          border-bottom-color: #e9f0f3;
       }
-      & .navbar-brand,
+      & .navbar-brand {
+	      position: relative;
+		  top: 21px;
+      }
       & .navbar-link,
       & .btn-link {
           color: darken($navbar-background-color, 15%);
@@ -41,13 +44,17 @@ $navbar-inverse-background-color:            $black !default;
       }
       & .navbar-text,
       & .navbar-nav > li > a {
-          color: darken($navbar-background-color, 15%);
+//           color: darken($navbar-background-color, 15%);
+		  color: #8c989e;
           font-weight: 500;
-          font-size: 14px;
+          font-size: 16px;
+          line-height: 0px;
+          
+          
       }
       & .navbar-nav > li > a:hover,
       & .navbar-nav > li > a:focus {
-          color: $navbar-font-color;
+          color: #657278;
       }
       & .navbar-nav > .active > a,
       & .navbar-nav > .active > a:hover,
@@ -89,6 +96,10 @@ $navbar-inverse-background-color:            $black !default;
           color: $navbar-font-color;
           background-color: $navbar-background-color;
       }
+      
+      #get-started {
+	          color: #34ad58;
+          }
 
       @media (max-width: 767px) {
           & .navbar-nav > li > a:hover,
