@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /**
  * typography
  * --------------------------------------------------
@@ -2233,5 +2234,125 @@ textarea {
   .callout-card img, .groups img {
     width: 274px;
     margin: -5px 0 0 -5px; }
+
+.trusted h3 {
+  color: #384047;
+  font-style: normal;
+  line-height: 1.4;
+  font-size: 26px;
+  margin-top: 0;
+  text-rendering: optimizeLegibility;
+  text-align: center; }
+.trusted p {
+  color: #8c989e;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: center; }
+
+.testimonial {
+  min-height: 1px;
+  padding: 0 80px;
+  position: relative; }
+
+.mega-quote {
+  border-radius: 5px;
+  background: #f6f9fa top center no-repeat;
+  background-size: cover;
+  padding: 50px 50% 30px 30px;
+  position: relative;
+  margin: 30px 0;
+  padding-bottom: 180px;
+  background-image: url("../../img/student-1.jpg");
+  background-position: right top; }
+  .mega-quote:before {
+    position: absolute;
+    top: -1px;
+    left: 30px;
+    width: 54px;
+    height: 21px;
+    background: url(https://static.teamtreehouse.com/assets/layouts/marketing/mega-quote-nub-2f7feb52a3814d16a4442dd1937d58e5.svg) 0 0 no-repeat;
+    content: " ";
+    display: block;
+    z-index: 2; }
+  .mega-quote:after {
+    clear: both; }
+  .mega-quote blockquote {
+    font: inherit;
+    vertical-align: baseline;
+    quotes: none;
+    font-style: italic;
+    border-width: 1px 0;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0 0 30px 0;
+    color: #fff;
+    font-size: 18px;
+    text-align: left;
+    font-weight: 400; }
+  .mega-quote cite {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+    margin-top: 5px;
+    display: block;
+    font-size: 15px;
+    color: #fff; }
+    .mega-quote cite:before {
+      content: "— "; }
+    .mega-quote cite:after {
+      box-sizing: border-box; }
+  .mega-quote .btn-inverse {
+    font-size: 16px;
+    font-weight: 500;
+    height: 52px;
+    position: relative;
+    line-height: 48px;
+    margin: 0;
+    outline: none;
+    padding: 0 32px;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: baseline;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 2px solid #5fcf80;
+    -webkit-transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, width 0.3s ease, opacity 0.3s ease;
+            transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, width 0.3s ease, opacity 0.3s ease;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    box-sizing: border-box;
+    margin-right: 0;
+    border-color: #fff;
+    color: #fff;
+    opacity: 0.88;
+    left: 35%;
+    top: 20px; }
+
+.row {
+  margin: 0 auto;
+  width: 100%; }
+  .row trust {
+    text-align: center; }
+  .row .trust-headline {
+    font-size: 18px;
+    margin: 0 0 25px 0; }
+
+.panel {
+  border-radius: 5px;
+  background-color: #f6f9fa;
+  padding: 30px;
+  margin-bottom: 30px; }
+  .panel h3 {
+    color: #384047;
+    font-style: normal;
+    line-height: 1.4;
+    margin-bottom: 15px;
+    text-rendering: optimizeLegibility; }
 
 /*# sourceMappingURL=bootflat.css.map */
