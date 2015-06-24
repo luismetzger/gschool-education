@@ -1987,6 +1987,12 @@ a.list-group-item {
   border-radius: 4px;
   box-shadow: 0 4px 10px 4px #13232f; }
 
+.tab {
+  display: inline-block;
+  margin-right: -90px;
+  text-align: left;
+  float: none; }
+
 .tab-group {
   list-style: none;
   padding: 0;
@@ -2354,5 +2360,26 @@ textarea {
     line-height: 1.4;
     margin-bottom: 15px;
     text-rendering: optimizeLegibility; }
+  .panel img {
+    width: 100%;
+    height: 64px;
+    max-width: 640px;
+    fill: #c7cfd1;
+    vertical-align: baseline;
+    margin-left: 155px; }
+  .panel:last-child {
+    margin-bottom: 0; }
+
+.partners {
+  padding: 0 75px; }
+
+.site-footer {
+  background-color: #f6f9fa;
+  border-top: solid 1px #e9f0f3;
+  border-bottom: solid 1px #e9f0f3;
+  margin-top: 100px; }
+
+.copyright p {
+  text-align: center; }
 
 /*# sourceMappingURL=bootflat.css.map */
