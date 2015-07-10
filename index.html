@@ -99,11 +99,10 @@
                                 </a>
                             </div>
                         </div>
-                        <video controls>
-                            <source src="video/chrome_japan.mp4" type="video/mp4" />
-                            <source src="video/chrome_japan.ogv" type="video/ogg" />
-                            <source src="video/chrome_japan.webm" type="video/webm" />
-                        </video>
+                        <video class="video-js" preload="none" poster="http://designmodo.github.io/Flat-UI/docs/assets/img/video/poster.jpg" data-setup='{}'>
+            <source src="http://iurevych.github.com/Flat-UI-videos/big_buck_bunny.mp4" type="video/mp4">
+            <source src="http://iurevych.github.com/Flat-UI-videos/big_buck_bunny.webm" type="video/webm">
+          </video>
                     </div>
                 </div>        
             </div>
@@ -413,6 +412,10 @@
             </footer>
 
         </div>
+        <script src="js/video.js"></script>
+        <script>
+            videojs.options.flash.swf = "js/vendors/video-js.swf"
+        </script>
         <script>
             $(document).ready(function () {
                 $("#show-video").click(function () {
@@ -420,8 +423,8 @@
                     $(".banner-data").fadeOut(function () {
                         i++;
                         if (i === 2) {
-                            $("video").show(function() {
-                                $("video").addClass("showVideo");
+                            $(".video-js").show(function () {
+                                $(".video-js").addClass("showVideo");
                             });
                         }
                     });
@@ -476,5 +479,6 @@
             });
 
         </script>
+
     </body>
 </html>
