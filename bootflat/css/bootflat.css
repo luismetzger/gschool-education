@@ -2036,7 +2036,8 @@ a.list-group-item {
     border-radius: 4px 0 4px 4px; }
 
 .docs-header {
-  background: none; }
+  background: none;
+  padding: 0; }
 
 .header--noBackground {
   background: none; }
@@ -2046,7 +2047,12 @@ a.list-group-item {
 
 .index {
   background-color: #5fcf80;
-  min-height: 622px; }
+  height: auto;
+  min-height: 0;
+  transition: 0.5s all ease-in-out;
+  padding-top: 90px; }
+  .index.video-up {
+    background-color: #2d3339; }
 
 .clear {
   clear: both; }
@@ -2054,8 +2060,9 @@ a.list-group-item {
 .hidden-tab {
   display: none; }
 
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6,
 body {
-  font-family: 'Varela Round', sans-serif; }
+  font-family: 'Varela Round', sans-serif !important; }
 
 .card {
   user-select: none;
@@ -2094,6 +2101,17 @@ body {
     right: 0;
     padding: 0 30px;
     background-color: #39ADD1; }
+    .card .progress i {
+      float: left;
+      font-size: 18px;
+      margin: 21px 6px 0 0;
+      color: rgba(255, 255, 255, 0.75); }
+      .card .progress i:first-child {
+        font-size: 28px;
+        margin: 15px 15px 0 0;
+        color: #fff; }
+    .card .progress span {
+      float: right; }
   .card .course-icon {
     margin-right: 15px;
     position: relative;
@@ -2131,7 +2149,10 @@ body {
     margin: 0; }
 
 .header_banner {
-  padding-top: 200px; }
+  transition: 0.5s all ease-in-out;
+  height: 553px; }
+  .header_banner .banner-data {
+    margin-top: 120px; }
   .header_banner h1 {
     font-size: 42px;
     line-height: 1.1;
@@ -2140,7 +2161,8 @@ body {
     font-weight: 500;
     font-style: normal;
     text-rendering: optimizeLegibility;
-    animation: opacity_change 500ms 1000ms ease-in forwards; }
+    animation: opacity_change 500ms 1000ms ease-in forwards;
+    margin-top: 85px; }
   .header_banner h2 {
     text-align: left;
     color: #fff;
@@ -2152,6 +2174,21 @@ body {
     animation: opacity_change 500ms 1000ms ease-in forwards; }
   .header_banner .download-link {
     text-align: left; }
+  .header_banner video {
+    opacity: 0;
+    display: none;
+    max-height: 550px;
+    position: relative;
+    top: -300px;
+    transition: 0.5s all ease-in-out; }
+    .header_banner video.showVideo {
+      display: block;
+      opacity: 1;
+      top: 0; }
+  .header_banner #show-video {
+    transition: 0.5s all ease-in-out; }
+    .header_banner #show-video:hover {
+      transform: scale(1.07, 1.07); }
 
 .desc__introduces {
   margin-bottom: 90px; }

@@ -20,8 +20,6 @@
 
         <!-- Sets initial viewport load and disables zooming  -->
         <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
-        <!-- SmartAddon.com Verification -->
-        <meta name="smartaddon-verification" content="936e8d43184bc47ef34e25e426c508fe" />
         <meta name="keywords" content="Flat UI Design, UI design, UI, user interface, web interface design, user interface design, Flat web design, Bootstrap, Bootflat, Flat UI colors, colors">
         <meta name="description" content="BOOTFLAT is an open source Flat UI KIT based on Bootstrap CSS framework.
               And, for the designers, we offer a free PSD Download. It provides a faster, easier and less repetitive way for web developers or designers to create elegant web apps.">
@@ -30,6 +28,7 @@
         <!-- site css -->
         <link rel="stylesheet" href="css/site.min.css">
         <link rel="stylesheet" href="bootflat/css/bootflat.css">
+        <link rel="stylesheet" href="css/animate.css">
 
         <!-- Typekit Fonts -->
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -75,37 +74,36 @@
 
                 <div class="row">
                     <div class="container header_banner">
-                        <div class="col-md-6"> 
+                        <div class="col-md-6 banner-data"> 
                             <h1>
                                 LEARN WITH US
                             </h1>
                             <h2>Whether you are just starting out or are a tech industry pro, we are here to provide you with the tools to help you excel.</h2>
-
-                            <p class="download-link">
-                                <a class="btn btn-primary" href="#">GET STARTED</a>
-                            </p>
                         </div>
-
-
-                        <div class="col-md-6">
+                        <div class="col-md-6 banner-data">
                             <div class="card">
-                                <a class="title" href="#">
+                                <a id="show-video" class="title" href="#">
                                     <div class="progress">
-                                        <img class="course-icon" src="http://placehold.it/18x18" />
-                                        <ul class="stages">
-                                            <li>1</li>
-                                            <li>2</li>
-                                            <li>3</li>
-                                        </ul>
+                                        <i class="fa fa-book"></i>
+                                        <i class="fa fa-circle-thin"></i>
+                                        <i class="fa fa-circle-thin"></i>
+                                        <i class="fa fa-circle-thin"></i>
                                         <span class="estimate">4 mins</span>
                                     </div>
                                     <strong>Course</strong>
                                     <h3>Getting started with gSchool</h3>
                                     <p class="description">In this course, we’ll introduce you to our learning style by taking you through a quick sample course.</p>
-
+                                    <br />
+                                    <br />
+                                    <button type="button" class="btn btn-primary btn-lg pull-left">Link to open the video <i class="fa fa-arrow-right"></i></button>
                                 </a>
                             </div>
                         </div>
+                        <video controls>
+                            <source src="video/chrome_japan.mp4" type="video/mp4" />
+                            <source src="video/chrome_japan.ogv" type="video/ogg" />
+                            <source src="video/chrome_japan.webm" type="video/webm" />
+                        </video>
                     </div>
                 </div>        
             </div>
@@ -416,6 +414,23 @@
 
         </div>
         <script>
+            $(document).ready(function () {
+                $("#show-video").click(function () {
+                    var i = 0;
+                    $(".banner-data").fadeOut(function () {
+                        i++;
+                        if (i === 2) {
+                            $("video").show(function() {
+                                $("video").addClass("showVideo");
+                            });
+                        }
+                    });
+                    $(".index").addClass("video-up");
+                })
+            });
+
+
+
             $('.form').find('input, textarea').on('keyup blur focus', function (e) {
 
                 var $this = $(this),
