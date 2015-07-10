@@ -2563,11 +2563,33 @@ textarea {
 .partners {
   padding: 0 75px; }
 
-.site-footer {
-  background-color: #f6f9fa;
-  border-top: solid 1px #e9f0f3;
-  border-bottom: solid 1px #e9f0f3;
-  margin-top: 100px; }
+footer {
+  margin-top: 100px;
+  text-align: center;
+  color: #8c989e;
+  position: relative; }
+  footer .social-menu {
+    margin: 25px 0 50px 5px;
+    padding: 0; }
+    footer .social-menu li {
+      display: inline-block;
+      font-size: 21px;
+      margin: 0 2px; }
+  footer a {
+    color: #8c989e;
+    transition: 0.5s all ease-in-out; }
+    footer a:hover {
+      color: #657278; }
+  footer:before {
+    width: 50px;
+    height: 1px;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    margin-left: -25px;
+    content: " ";
+    display: block;
+    background-color: #eaedef; }
 
 .copyright p {
   text-align: center; }

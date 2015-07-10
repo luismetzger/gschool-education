@@ -398,7 +398,7 @@ textarea {
     border: 0;
     font-size: 18px;
     vertical-align: baseline;
-color:#000;
+    color:#000;
     &:hover {
         background-color: #eaedee;
 
@@ -652,7 +652,7 @@ color:#000;
     margin: 0 auto;
     width: 100%;
 
-      
+
     .trust-headline {
         font-size: 18px;
         margin: 0 0 25px 0;
@@ -660,20 +660,46 @@ color:#000;
 
 }
 .trust {
-        text-align: center;
-        img {
-            max-width: 100%;
-        }
-    }	
+    text-align: center;
+    img {
+        max-width: 100%;
+    }
+}	
 .partners {
     padding: 0 75px;
 }
-.site-footer {
-    background-color: #f6f9fa;
-    border-top: solid 1px #e9f0f3;
-    border-bottom: solid 1px #e9f0f3;
+footer {
     margin-top: 100px;
-
+    text-align: center;
+    color:#8c989e;
+    position:relative;
+    .social-menu {
+        margin:25px 0 50px 5px;
+        padding:0;
+        li {
+            display: inline-block;
+            font-size: 21px;
+            margin: 0 2px;
+        }
+    }
+    a {
+        color:#8c989e;
+        transition:0.5s all ease-in-out;
+        &:hover {
+            color:#657278;
+        }
+    }
+    &:before {
+        width: 50px;
+        height: 1px;
+        position: absolute;
+        top: -50px;
+        left: 50%;
+        margin-left: -25px;
+        content: " ";
+        display: block;
+        background-color: #eaedef;
+    }
 }
 
 .copyright {
