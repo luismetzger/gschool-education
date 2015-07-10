@@ -99,10 +99,10 @@
                                 </a>
                             </div>
                         </div>
-                        <video class="video-js" preload="none" poster="http://designmodo.github.io/Flat-UI/docs/assets/img/video/poster.jpg" data-setup='{}'>
-            <source src="http://iurevych.github.com/Flat-UI-videos/big_buck_bunny.mp4" type="video/mp4">
-            <source src="http://iurevych.github.com/Flat-UI-videos/big_buck_bunny.webm" type="video/webm">
-          </video>
+                        <video class="video-js" preload="none" data-setup='{}'>
+                            <source src="http://iurevych.github.com/Flat-UI-videos/big_buck_bunny.mp4" type="video/mp4">
+                            <source src="http://iurevych.github.com/Flat-UI-videos/big_buck_bunny.webm" type="video/webm">
+                        </video>
                     </div>
                 </div>        
             </div>
@@ -425,6 +425,7 @@
                         if (i === 2) {
                             $(".video-js").show(function () {
                                 $(".video-js").addClass("showVideo");
+                                    $("video").trigger("play");
                             });
                         }
                     });
