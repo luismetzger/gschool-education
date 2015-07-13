@@ -142,17 +142,17 @@
                 <div class="desc__features">
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2 text-centered">
-                            <div class="col-md-4">
+                            <div class="col-sm-4 col-xs-12">
                                 <div class="features__photo"><img src="img/feature-bootstrap.png" /></div>
                                 <h4>Get started</h4>
                                 <p>We're here to help you get started. Whether you are looking for a new career, want to learn to code for fun, or want to keep your skills cutting edge for your job, we will help you start down the right path.</p>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-sm-4 col-xs-12">
                                 <div class="features__photo"><img src="img/feature-css.png" /></div>
                                 <h4>Learn & build</h4>
                                 <p>Learn by actually building something yourself! By watching our course videos and coding along in Workspaces, our browser-based code editor, you can see the results of your work in real-time.</p>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-sm-4 col-xs-12">
                                 <div class="features__photo"><img src="img/feature-css.png" /></div>
                                 <h4>Share your work</h4>
                                 <p>Take advantage of our robust community of students, alumni and teachers who can review your work, problem-solve and offer support.</p>
@@ -418,6 +418,20 @@
         </script>
         <script>
             $(document).ready(function () {
+                $("video").on("pause", function () {
+                    setTimeout(function () {
+                        if ($("video").get(0).paused) {
+                            $(".video-js").removeClass("showVideo").hide();
+                            $(".banner-data").fadeIn();
+                            $(".index").removeClass("video-up");
+                        }
+                    }, 500);
+                });
+                $("video").on("ended", function () {
+                    $(".video-js").removeClass("showVideo").hide();
+                    $(".banner-data").fadeIn();
+                    $(".index").removeClass("video-up");
+                });
                 $("#show-video").click(function () {
                     var i = 0;
                     $(".banner-data").fadeOut(function () {
@@ -425,7 +439,7 @@
                         if (i === 2) {
                             $(".video-js").show(function () {
                                 $(".video-js").addClass("showVideo");
-                                    $("video").trigger("play");
+                                $("video").trigger("play");
                             });
                         }
                     });

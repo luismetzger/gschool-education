@@ -2150,9 +2150,10 @@ body {
 
 .header_banner {
   transition: 0.5s all ease-in-out;
-  height: 553px; }
+  height: auto; }
   .header_banner .banner-data {
-    margin-top: 120px; }
+    margin-top: 170px;
+    margin-bottom: 170px; }
   .header_banner h1 {
     font-size: 42px;
     line-height: 1.1;
@@ -2181,7 +2182,8 @@ body {
     display: none;
     position: relative;
     top: -300px;
-    transition: 0.5s all ease-in-out; }
+    transition: 0.5s all ease-in-out;
+    padding: 0; }
     .header_banner .video-js.showVideo {
       display: block;
       opacity: 1;
@@ -2232,6 +2234,8 @@ body {
   top: 0;
   left: 0;
   text-align: left; }
+  .desc .desc__features .features__photo img {
+    max-width: 100%; }
 
 .form {
   background: #13232f;
@@ -2664,6 +2668,17 @@ footer {
       color: #fff;
       border: 1px solid #fff !important; }
 
+@media (max-width: 768px) {
+  .desc .desc__features .features__photo {
+    text-align: center; }
+
+  .header_banner .banner-data {
+    margin-top: 0; }
+  .header_banner h1 {
+    margin: 0;
+    padding: 0 0 0 16px; }
+  .header_banner h2 {
+    padding: 0 0 75px 16px; } }
 .video-js {
   position: relative;
   width: 100% !important;
