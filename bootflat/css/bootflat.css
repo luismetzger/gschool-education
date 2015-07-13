@@ -2247,7 +2247,6 @@ body {
 
 .tab {
   display: inline-block;
-  margin-right: -90px;
   text-align: left;
   float: none; }
 
@@ -2277,7 +2276,6 @@ body {
     height: 58px;
     line-height: 52px;
     float: left;
-    width: 75%;
     text-align: center;
     cursor: pointer;
     transition: .5s ease; }
@@ -2678,7 +2676,28 @@ footer {
     margin: 0;
     padding: 0 0 0 16px; }
   .header_banner h2 {
-    padding: 0 0 75px 16px; } }
+    padding: 0 0 75px 16px; }
+
+  #topic .topic-item img {
+    width: 100%; }
+
+  .navbar-default .navbar-text, .navbar-default .navbar-nav > li > a {
+    text-align: center; }
+
+  .navbar-default .navbar-brand {
+    top: 9px; }
+
+  .navbar-toggle {
+    top: 10px; }
+
+  .navbar-header {
+    margin-bottom: 19px; }
+
+  .header_banner .banner-data {
+    margin-bottom: 20px; }
+
+  .desc .desc__introduces h3 {
+    text-align: center; } }
 .video-js {
   position: relative;
   width: 100% !important;
