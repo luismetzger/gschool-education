@@ -799,6 +799,29 @@ footer {
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width:768px) {
     .desc{
         .desc__features {
@@ -844,6 +867,53 @@ footer {
     .desc .desc__introduces h3 {
         text-align: center;
     }
+}
+
+
+.modal-dialog{top: 30%;
+max-width: 360px;}
+
+.login-form{
+input{
+	
+    width: 100%;
+    background: #E8EBED none repeat scroll 0% 0%;
+    padding: 12px 15px;
+    color: #A6B0B7;
+    border: medium none;
+    min-height: 45px;
+
+
+	&:hover{
+    outline: 3px solid #CCC;
+    background: #FFF none repeat scroll 0% 0%;
+}	
+		&:focus{
+    outline: 3px solid #CCC;
+    background: #FFF none repeat scroll 0% 0%;
+}	
+}
+	button{    background-color: #39ADD1;
+    border-color: #39ADD1;
+		margin-bottom: 20px;
+&:hover{  background-color: #298FAE ;
+    border-color: #298FAE ;}
+		&:focus{  background-color: #298FAE ;
+    border-color: #298FAE ;}
+	
+	}
+	
+}
+
+
+
+.modal-header
+{.close {
+    border: 2px solid !important;
+    padding: 1px 4px;
+    border-radius: 5px;
+
+}
 }
 @media (min-width:768px) AND (max-width:992px) {
 
