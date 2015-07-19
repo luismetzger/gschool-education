@@ -2726,6 +2726,8 @@ footer {
   .login-form button:focus {
     background-color: #298FAE;
     border-color: #298FAE; }
+.login-form .forgot {
+  padding-top: 30px; }
 
 .modal-header .close {
   border: 2px solid !important;
